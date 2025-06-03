@@ -6,7 +6,7 @@
 main(){
 	setlocale(LC_ALL, "Portuguese");
 	int opcao1, opcao2, opcao3, opcao4;
-	char nome[30], sobrenome[30], telefone[14];
+	char nome[30], sobrenome[30], telefone[14], instrumentoCriacao[25];
 	system("color 70");
 	printf("+_____________________________________________________________________________________________________________________+\n\n\n\n\n");
 	printf("\t\t\t\t                           ____         ___\n");
@@ -17,29 +17,29 @@ main(){
 	printf("\t\t\t\t                        _.' )   ____  '-'    ;\n");
 	printf("\t\t\t\t                       (    `-''  __``-'    /\n");
 	printf("\t\t\t\t                       ``-....-''  ``-..-''\n");
-	printf("\t\t\t\x1b[37;40m      ___                                                          \n");
-	printf("\t\t\t\x1b[37;40m    //   ) )                                                       \n");
-	printf("\t\t\t\x1b[37;40m   ((         ___       __    __  ___ / __     ( )  ___      __    \n");
-	printf("\t\t\t\x1b[37;40m     \\     //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) )  \n");
-	printf("\t\t\t\x1b[37;40m      ) ) //   / / //   / /  / /   //   / / / / //       //        \n");
+    printf("\t\t\t\x1b[37;40m      ___                                                          \n");
+    printf("\t\t\t\x1b[37;40m    //   ) )                                                       \n");
+    printf("\t\t\t\x1b[37;40m   ((         ___       __    __  ___ / __     ( )  ___      __    \n");
+    printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
+    printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
     printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
-    printf("\t\t\t\x1b[37;40m                                                                   \x1b[30;47m");
+    printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");
 	printf("\x1b[29;1f+_____________________________________________________________________________________________________________________+");
     printf("\x1b[37;40m\r\t\t\t\t\t\t Carregando.  \x1b[0m");
-    _sleep(500);
+    _sleep(700);
     printf("\x1b[37;40m\r\t\t\t\t\t\t Carregando.. \x1b[0m");
-    _sleep(500);
+    _sleep(700);
     printf("\x1b[37;40m\r\t\t\t\t\t\t Carregando...\x1b[0m");
-	_sleep(500);
-	while(opcao1 != 4){
+	_sleep(700);
+	while(opcao1 != 5){
     system("cls");
     system("color 70");
     printf("+_____________________________________________________________________________________________________________________+\n");
     printf("\t\t\t\x1b[37;40m      ___                                                          \n");
 	printf("\t\t\t\x1b[37;40m    //   ) )                                                       \n");
 	printf("\t\t\t\x1b[37;40m   ((         ___       __    __  ___ / __     ( )  ___      __    \n");
-	printf("\t\t\t\x1b[37;40m    \\     //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) )   \n");
-	printf("\t\t\t\x1b[37;40m      ) ) //   / / //   / /  / /   //   / / / / //       //        \n");
+	printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
+	printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
     printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
     printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");
 	printf("\t\t\t\t        _____________________________\n");
@@ -47,7 +47,9 @@ main(){
 	printf("\t\t\t\t       ´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´\n\n");
 	printf("\t\t\t\t       1- Criação de instrumento\n\n");
 	printf("\t\t\t\t       2- Manutenção de instrumento\n\n");
-    printf("\t\t\t\t       3- Cadastro\n\n\t\t\t\t\t");
+    printf("\t\t\t\t       3- Cadastro\n\n");
+    printf("\t\t\t\t       4- Relatório\n\n");
+    printf("\t\t\t\t       5- Sair\n\n\t\t\t\t\t");
 	printf("\x1b[29;1f+_____________________________________________________________________________________________________________________+");
 	scanf("%i", &opcao1);
 	switch (opcao1){
@@ -57,8 +59,8 @@ main(){
             printf("\t\t\t\x1b[37;40m      ___                                                          \n");
             printf("\t\t\t\x1b[37;40m    //   ) )                                                       \n");
             printf("\t\t\t\x1b[37;40m   ((         ___       __    __  ___ / __     ( )  ___      __    \n");
-            printf("\t\t\t\x1b[37;40m    \\     //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) )   \n");
-            printf("\t\t\t\x1b[37;40m      ) ) //   / / //   / /  / /   //   / / / / //       //        \n");
+            printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
+            printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
             printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
             printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");
             printf("\t\t\t\t   ___________________________________\n");
@@ -76,8 +78,8 @@ main(){
                     printf("\t\t\t\x1b[37;40m      ___                                                          \n");
                     printf("\t\t\t\x1b[37;40m    //   ) )                                                       \n");
                     printf("\t\t\t\x1b[37;40m   ((         ___       __    __  ___ / __     ( )  ___      __    \n");
-                    printf("\t\t\t\x1b[37;40m    \\     //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) )   \n");
-                    printf("\t\t\t\x1b[37;40m      ) ) //   / / //   / /  / /   //   / / / / //       //        \n");
+                    printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
+                    printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
                     printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
                     printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");
                     printf("\t\t\t\t\t   _________________\n");
@@ -100,8 +102,8 @@ main(){
                             printf("\t\t\t\x1b[37;40m      ___                                                          \n");
                             printf("\t\t\t\x1b[37;40m    //   ) )                                                       \n");
                             printf("\t\t\t\x1b[37;40m   ((         ___       __    __  ___ / __     ( )  ___      __    \n");
-                            printf("\t\t\t\x1b[37;40m    \\     //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) )   \n");
-                            printf("\t\t\t\x1b[37;40m      ) ) //   / / //   / /  / /   //   / / / / //       //        \n");
+                            printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
+                            printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
                             printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
                             printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");
                             printf("\t\t\t\t\t   _______________\n");
@@ -122,7 +124,19 @@ main(){
                             scanf("%i", &opcao4);
                                 switch(opcao4){
                                 case 1:
-                                printf("to triste");
+                                system("cls");
+                                printf("\t\t\t\t\tRegistrando seu pedido");
+                                int i=0;
+                                strcpy(instrumentoCriacao, "GuitJaguar");
+                                while (i<5){
+                                    printf(".");
+                                    _sleep(500);
+                                    i++;
+                                }
+                                system("cls");
+                                printf("\n\n\t\t\t\t\t\x1b[37;40mSeu pedido foi registrado com SUCESSO!");
+                                printf("\n\n\n\t\t\t\t\t%s\n\t\t\t\t\t%s\n\t\t\t\t\t%s\n\t\t\t\t\t%s",nome, sobrenome, telefone, instrumentoCriacao);
+                                _sleep(5000);
                                 }
 
                             break;
@@ -132,8 +146,8 @@ main(){
                             printf("\t\t\t\x1b[37;40m      ___                                                          \n");
                             printf("\t\t\t\x1b[37;40m    //   ) )                                                       \n");
                             printf("\t\t\t\x1b[37;40m   ((         ___       __    __  ___ / __     ( )  ___      __    \n");
-                            printf("\t\t\t\x1b[37;40m    \\     //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) )   \n");
-                            printf("\t\t\t\x1b[37;40m      ) ) //   / / //   / /  / /   //   / / / / //       //        \n");
+                            printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
+                            printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
                             printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
                             printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");                            printf("\t\t\t\t\t ___________________\n");
                             printf("\t\t\t\t\t|Guitarra Jazzmaster|\n");
@@ -150,6 +164,22 @@ main(){
                             printf("  uma escolha cultuada por músicos que buscam versatilidade e personalidade sonora.\n\n");
                             printf("  Enviar pedido?\n  1-Sim\n  1-Não\n");
                             scanf("%i", &opcao4);
+                             switch(opcao4){
+                                case 1:
+                                system("cls");
+                                printf("\t\t\t\t\tRegistrando seu pedido");
+                                int i=0;
+                                strcpy(instrumentoCriacao, "GuitJazzMaster");
+                                while (i<5){
+                                    printf(".");
+                                    _sleep(500);
+                                    i++;
+                                }
+                                system("cls");
+                                printf("\n\n\t\t\t\t\t\x1b[37;40mSeu pedido foi registrado com SUCESSO!");
+                                printf("\n\n\n\t\t\t\t\t%s\n\t\t\t\t\t%s\n\t\t\t\t\t%s\n\t\t\t\t\t%s",nome, sobrenome, telefone, instrumentoCriacao);
+                                _sleep(5000);
+                                }
                             break;
                             case 3:
                             system("cls");
@@ -157,10 +187,10 @@ main(){
                             printf("\t\t\t\x1b[37;40m      ___                                                          \n");
                             printf("\t\t\t\x1b[37;40m    //   ) )                                                       \n");
                             printf("\t\t\t\x1b[37;40m   ((         ___       __    __  ___ / __     ( )  ___      __    \n");
-                            printf("\t\t\t\x1b[37;40m    \\     //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) )   \n");
-                            printf("\t\t\t\x1b[37;40m      ) ) //   / / //   / /  / /   //   / / / / //       //        \n");
+                            printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
+                            printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
                             printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
-                            printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");                            printf("\t\t\t\t\t   _________________\n");
+                            printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");                           printf("\t\t\t\t\t   _________________\n");
                             printf("\t\t\t\t\t  |Guitarra Les Paul|\n");
                             printf("\t\t\t\t\t  ´´´´´´´´´´´´´´´´´´´\n\n");
                             printf("\tA guitarra Gibson Les Paul é um dos modelos mais icônicos e influentes da história da música, lançada em\n");
@@ -175,6 +205,22 @@ main(){
                             printf("  Enviar pedido?\n  1-Sim\n  1-Não\n");
                             printf("\x1b[29;1f+_____________________________________________________________________________________________________________________+");
                             scanf("%i", &opcao4);
+                             switch(opcao4){
+                                case 1:
+                                system("cls");
+                                printf("\t\t\t\t\tRegistrando seu pedido");
+                                int i=0;
+                                strcpy(instrumentoCriacao, "GuitLesPaul");
+                                while (i<5){
+                                    printf(".");
+                                    _sleep(500);
+                                    i++;
+                                }
+                                system("cls");
+                                printf("\n\n\t\t\t\t\t\x1b[37;40mSeu pedido foi registrado com SUCESSO!");
+                                printf("\n\n\n\t\t\t\t\t%s\n\t\t\t\t\t%s\n\t\t\t\t\t%s\n\t\t\t\t\t%s",nome, sobrenome, telefone, instrumentoCriacao);
+                                _sleep(5000);
+                                }
                             break;
                             case 4:
                             system("cls");
@@ -182,8 +228,8 @@ main(){
                             printf("\t\t\t\x1b[37;40m      ___                                                          \n");
                             printf("\t\t\t\x1b[37;40m    //   ) )                                                       \n");
                             printf("\t\t\t\x1b[37;40m   ((         ___       __    __  ___ / __     ( )  ___      __    \n");
-                            printf("\t\t\t\x1b[37;40m    \\     //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) )   \n");
-                            printf("\t\t\t\x1b[37;40m      ) ) //   / / //   / /  / /   //   / / / / //       //        \n");
+                            printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
+                            printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
                             printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
                             printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");                            printf("\t\t\t\t\t   ___________\n");
                             printf("\t\t\t\t\t  |Guitarra SG|\n");
@@ -199,6 +245,22 @@ main(){
                             printf("  Sabbath). A SG é uma guitarra versátil, poderosa e com forte presença tanto estética quanto sonora.\n\n");
                             printf("  Enviar pedido?\n  1-Sim\n  1-Não\n");
                             scanf("%i", &opcao4);
+                             switch(opcao4){
+                                case 1:
+                                system("cls");
+                                printf("\t\t\t\t\tRegistrando seu pedido");
+                                int i=0;
+                                strcpy(instrumentoCriacao, "GuitSG");
+                                while (i<5){
+                                    printf(".");
+                                    _sleep(500);
+                                    i++;
+                                }
+                                system("cls");
+                                printf("\n\n\t\t\t\t\t\x1b[37;40mSeu pedido foi registrado com SUCESSO!");
+                                printf("\n\n\n\t\t\t\t\t%s\n\t\t\t\t\t%s\n\t\t\t\t\t%s\n\t\t\t\t\t%s",nome, sobrenome, telefone, instrumentoCriacao);
+                                _sleep(5000);
+                                }
                             break;
                             case 5:
                             system("cls");
@@ -206,10 +268,10 @@ main(){
                             printf("\t\t\t\x1b[37;40m      ___                                                          \n");
                             printf("\t\t\t\x1b[37;40m    //   ) )                                                       \n");
                             printf("\t\t\t\x1b[37;40m   ((         ___       __    __  ___ / __     ( )  ___      __    \n");
-                            printf("\t\t\t\x1b[37;40m    \\     //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) )   \n");
-                            printf("\t\t\t\x1b[37;40m      ) ) //   / / //   / /  / /   //   / / / / //       //        \n");
+                            printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
+                            printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
                             printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
-                            printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");                            printf("\t\t\t\t\t _____________________\n");
+                            printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");                           printf("\t\t\t\t\t _____________________\n");
                             printf("\t\t\t\t\t|Guitarra Stratocaster|\n");
                             printf("\t\t\t\t\t´´´´´´´´´´´´´´´´´´´´´´´\n\n");
                             printf("\tA Fender Stratocaster, lançada em 1954, é uma das guitarras mais reconhecíveis e versáteis de todos os\n");
@@ -224,6 +286,22 @@ main(){
                             printf("  músicos de todos os estilos, incluindo lendas como Jimi Hendrix, Eric Clapton e John Frusciante.\n \n");
                             printf("  Enviar pedido?\n  1-Sim\n  1-Não\n\n");
                             scanf("%i", &opcao4);
+                             switch(opcao4){
+                                case 1:
+                                system("cls");
+                                printf("\t\t\t\t\tRegistrando seu pedido");
+                                int i=0;
+                                strcpy(instrumentoCriacao, "GuitStratocaster");
+                                while (i<5){
+                                    printf(".");
+                                    _sleep(500);
+                                    i++;
+                                }
+                                system("cls");
+                                printf("\n\n\t\t\t\t\t\x1b[37;40mSeu pedido foi registrado com SUCESSO!");
+                                printf("\n\n\n\t\t\t\t\t%s\n\t\t\t\t\t%s\n\t\t\t\t\t%s\n\t\t\t\t\t%s",nome, sobrenome, telefone, instrumentoCriacao);
+                                _sleep(5000);
+                                }
                             break;
                             case 6:
                             system("cls");
@@ -231,8 +309,8 @@ main(){
                             printf("\t\t\t\x1b[37;40m      ___                                                          \n");
                             printf("\t\t\t\x1b[37;40m    //   ) )                                                       \n");
                             printf("\t\t\t\x1b[37;40m   ((         ___       __    __  ___ / __     ( )  ___      __    \n");
-                            printf("\t\t\t\x1b[37;40m    \\     //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) )   \n");
-                            printf("\t\t\t\x1b[37;40m      ) ) //   / / //   / /  / /   //   / / / / //       //        \n");
+                            printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
+                            printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
                             printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
                             printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");                            printf("\t\t\t\t\t  ____________________\n");
                             printf("\t\t\t\t\t |Guitarra Superstrato|\n");
@@ -250,6 +328,22 @@ main(){
                             printf("  Satriani e muitos músicos do metal moderno.\n\n");
                             printf("  Enviar pedido?\n  1-Sim\n  1-Não");
                             scanf("%i", &opcao4);
+                             switch(opcao4){
+                                case 1:
+                                system("cls");
+                                printf("\t\t\t\t\tRegistrando seu pedido");
+                                int i=0;
+                                strcpy(instrumentoCriacao, "GuitSuperStrato");
+                                while (i<5){
+                                    printf(".");
+                                    _sleep(500);
+                                    i++;
+                                }
+                                system("cls");
+                                printf("\n\n\t\t\t\t\t\x1b[37;40mSeu pedido foi registrado com SUCESSO!");
+                                printf("\n\n\n\t\t\t\t\t%s\n\t\t\t\t\t%s\n\t\t\t\t\t%s\n\t\t\t\t\t%s",nome, sobrenome, telefone, instrumentoCriacao);
+                                _sleep(5000);
+                                }
                             break;
                             case 7:
                             system("cls");
@@ -257,8 +351,8 @@ main(){
                             printf("\t\t\t\x1b[37;40m      ___                                                          \n");
                             printf("\t\t\t\x1b[37;40m    //   ) )                                                       \n");
                             printf("\t\t\t\x1b[37;40m   ((         ___       __    __  ___ / __     ( )  ___      __    \n");
-                            printf("\t\t\t\x1b[37;40m    \\     //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) )   \n");
-                            printf("\t\t\t\x1b[37;40m      ) ) //   / / //   / /  / /   //   / / / / //       //        \n");
+                            printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
+                            printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
                             printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
                             printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");                            printf("\t\t\t\t     _____________________________\n");
                             printf("\t\t\t\t    |Guitarra Superstrato 7 Cordas|\n");
@@ -276,6 +370,22 @@ main(){
                             printf("  popularizaram o uso da superstrato de 7 cordas no cenário mundial.\n\n");
                             printf("  Enviar pedido?\n  1-Sim\n  1-Não");
                             scanf("%i", &opcao4);
+                             switch(opcao4){
+                                case 1:
+                                system("cls");
+                                printf("\t\t\t\t\tRegistrando seu pedido");
+                                int i=0;
+                                strcpy(instrumentoCriacao, "GuitSuperstrato7C");
+                                while (i<5){
+                                    printf(".");
+                                    _sleep(500);
+                                    i++;
+                                }
+                                system("cls");
+                                printf("\n\n\t\t\t\t\t\x1b[37;40mSeu pedido foi registrado com SUCESSO!");
+                                printf("\n\n\n\t\t\t\t\t%s\n\t\t\t\t\t%s\n\t\t\t\t\t%s\n\t\t\t\t\t%s",nome, sobrenome, telefone, instrumentoCriacao);
+                                _sleep(5000);
+                                }
                             break;
                             case 8:
                             system("cls");
@@ -283,8 +393,8 @@ main(){
                             printf("\t\t\t\x1b[37;40m      ___                                                          \n");
                             printf("\t\t\t\x1b[37;40m    //   ) )                                                       \n");
                             printf("\t\t\t\x1b[37;40m   ((         ___       __    __  ___ / __     ( )  ___      __    \n");
-                            printf("\t\t\t\x1b[37;40m    \\     //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) )   \n");
-                            printf("\t\t\t\x1b[37;40m      ) ) //   / / //   / /  / /   //   / / / / //       //        \n");
+                            printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
+                            printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
                             printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
                             printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");                            printf("\t\t\t\t\t   ___________________\n");
                             printf("\t\t\t\t\t  |Guitarra Telecaster|\n");
@@ -301,6 +411,22 @@ main(){
                             printf("  Springsteen, Keith Richards e John 5.\n\n");
                             printf("  Enviar pedido?\n  1-Sim\n  2-Não");
                             scanf("%i", &opcao4);
+                             switch(opcao4){
+                                case 1:
+                                system("cls");
+                                printf("\t\t\t\t\tRegistrando seu pedido");
+                                int i=0;
+                                strcpy(instrumentoCriacao, "GuitTelecaster");
+                                while (i<5){
+                                    printf(".");
+                                    _sleep(500);
+                                    i++;
+                                }
+                                system("cls");
+                                printf("\n\n\t\t\t\t\t\x1b[37;40mSeu pedido foi registrado com SUCESSO!");
+                                printf("\n\n\n\t\t\t\t\t%s\n\t\t\t\t\t%s\n\t\t\t\t\t%s\n\t\t\t\t\t%s",nome, sobrenome, telefone, instrumentoCriacao);
+                                _sleep(5000);
+                                }
                             break;
 
                     }
@@ -310,13 +436,14 @@ main(){
                 case 3:
                 system("cls");
                 printf("+_____________________________________________________________________________________________________________________+\n");
-                printf("\t\t\t\x1b[37;40m      ___                                                          \n");
+                 printf("\t\t\t\x1b[37;40m      ___                                                          \n");
                 printf("\t\t\t\x1b[37;40m    //   ) )                                                       \n");
                 printf("\t\t\t\x1b[37;40m   ((         ___       __    __  ___ / __     ( )  ___      __    \n");
-                printf("\t\t\t\x1b[37;40m    \\     //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) )   \n");
-                printf("\t\t\t\x1b[37;40m      ) ) //   / / //   / /  / /   //   / / / / //       //        \n");
+                printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
+                printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
                 printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
-                printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");                printf("\t\t\t\t\t        ________\n");
+                printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");
+                printf("\t\t\t\t\t        ________\n");
                 printf("\t\t\t\t\t       |Cadastro|\n");
                 printf("\t\t\t\t\t       ´´´´´´´´´´\n\n");
                 printf("\t\t\t\tInsira seu primeiro nome:  \n");
@@ -334,8 +461,9 @@ main(){
                 _sleep(3000);
                 }
                 else{
-                    printf("Existem inforamções faltantes");
+                    printf("Existem informações faltantes");
                 _sleep(3000);
+                opcao1 =4;
                 }
                 break;
 		}
