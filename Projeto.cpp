@@ -4,9 +4,9 @@
 #include <string.h>
 
 main(){
-	setlocale(LC_ALL, "Portuguese");
-	int opcao1, opcao2, opcao3, opcao4, opcaosair;
-	char nome[30], sobrenome[30], telefone[14], instrumentoCriacao[25];
+	setlocale(LC_ALL, "Portuguese"); //Comando para disponibilizar caracteres da lingua portuguesa
+	int opcao1, opcao2, opcao3, opcao4, opcaosair;//declaracao de variaveis de selacao
+	char nome[30], sobrenome[30], telefone[14], instrumentoCriacao[25];//strings de armazenamento
 	system("color 70");
 	printf("+_____________________________________________________________________________________________________________________+\n\n\n\n\n");
 	printf("\t\t\t\t                           ____         ___\n");
@@ -31,7 +31,7 @@ main(){
     _sleep(700);
     printf("\x1b[37;40m\r\t\t\t\t\t\t Carregando...\x1b[0m");
 	_sleep(700);
-	while(opcao1 != 4){
+	while(opcao1 != 4){                         //O código principal começa aqui
     system("cls");
     system("color 70");
     printf("+_____________________________________________________________________________________________________________________+\n");
@@ -50,7 +50,9 @@ main(){
     printf("\t\t\t\t       3- Relatório\n\n");
     printf("\t\t\t\t       4- Sair\n\n\t\t\t\t\t");
 	printf("\x1b[29;1f+_____________________________________________________________________________________________________________________+");
-	scanf("%i", &opcao1);
+	printf("\x1b[29;55f\x1b[37;40m");
+	scanf("%i", &opcao1); //leitura opcao 1
+    printf("\x1b[30;47m");
 	switch (opcao1){
 		case 1:
 			system("cls");
@@ -69,7 +71,9 @@ main(){
 			printf("\n\n");
 			printf("\t\t\t\t     2- Contrabaixo\n\n\t\t\t\t\t");
             printf("\x1b[29;1f+_____________________________________________________________________________________________________________________+");
-			scanf("%i", &opcao2);
+            printf("\x1b[29;55f\x1b[37;40m");
+            scanf("%i", &opcao2);
+            printf("\x1b[30;47m");
             switch (opcao2){
                 case 1:
                     system("cls");
@@ -93,7 +97,9 @@ main(){
                     printf("\t\t\t\t\t  7- SuperStrato 7 Cordas\n\n");
                     printf("\t\t\t\t\t  8- Telecaster\n\n\t\t\t\t\t");
                     printf("\x1b[29;1f+_____________________________________________________________________________________________________________________+");
+                    printf("\x1b[29;55f\x1b[37;40m");
                     scanf("%i", &opcao3);
+                    printf("\x1b[30;47m");
                     switch (opcao3){
                         case 1:
                             system("cls");
@@ -120,7 +126,9 @@ main(){
                             printf("  estética vintage quanto por sua versatilidade tonal.\n\n");
                             printf("  Enviar pedido?\n  1-Sim\n  1-Não\n");
                             printf("\x1b[29;1f+_____________________________________________________________________________________________________________________+");
+                            printf("\x1b[29;55f\x1b[37;40m");
                             scanf("%i", &opcao4);
+                            printf("\x1b[30;47m");
                                 switch(opcao4){
                                 case 1:
                                 system("cls");
@@ -163,7 +171,10 @@ main(){
                             printf("  afinação. A Jazzmaster é conhecida por seu sustain rico, resposta dinâmica e estética clássica, tornando-se\n");
                             printf("  uma escolha cultuada por músicos que buscam versatilidade e personalidade sonora.\n\n");
                             printf("  Enviar pedido?\n  1-Sim\n  1-Não\n");
+                            printf("\x1b[29;1f+_____________________________________________________________________________________________________________________+");
+                            printf("\x1b[29;55f\x1b[37;40m");
                             scanf("%i", &opcao4);
+                            printf("\x1b[30;47m");
                              switch(opcao4){
                                 case 1:
                                 system("cls");
@@ -205,7 +216,9 @@ main(){
                             printf("  Paul é uma escolha preferida por guitarristas que buscam presença sonora e estilo marcante.\n\n");
                             printf("  Enviar pedido?\n  1-Sim\n  1-Não\n");
                             printf("\x1b[29;1f+_____________________________________________________________________________________________________________________+");
+                            printf("\x1b[29;55f\x1b[37;40m");
                             scanf("%i", &opcao4);
+                            printf("\x1b[30;47m");
                              switch(opcao4){
                                 case 1:
                                 system("cls");
@@ -246,7 +259,10 @@ main(){
                             printf("  pegada rápida e direta a tornaram favorita de guitarristas como Angus Young (AC/DC) e Tony Iommi (Black\n");
                             printf("  Sabbath). A SG é uma guitarra versátil, poderosa e com forte presença tanto estética quanto sonora.\n\n");
                             printf("  Enviar pedido?\n  1-Sim\n  1-Não\n");
+                            printf("\x1b[29;1f+_____________________________________________________________________________________________________________________+");
+                            printf("\x1b[29;55f\x1b[37;40m");
                             scanf("%i", &opcao4);
+                            printf("\x1b[30;47m");
                              switch(opcao4){
                                 case 1:
                                 system("cls");
@@ -288,7 +304,10 @@ main(){
                             printf("  combinado com um visual clássico e tocabilidade excelente, faz da Stratocaster uma escolha consagrada por\n");
                             printf("  músicos de todos os estilos, incluindo lendas como Jimi Hendrix, Eric Clapton e John Frusciante.\n \n");
                             printf("  Enviar pedido?\n  1-Sim\n  1-Não\n\n");
+                            printf("\x1b[29;1f+_____________________________________________________________________________________________________________________+");
+                            printf("\x1b[29;55f\x1b[37;40m");
                             scanf("%i", &opcao4);
+                            printf("\x1b[30;47m");
                              switch(opcao4){
                                 case 1:
                                 system("cls");
@@ -331,7 +350,10 @@ main(){
                             printf("  legato. Superstratos são preferidas por guitarristas virtuosos e de estilos t?cnicos, como Steve Vai, Joe\n");
                             printf("  Satriani e muitos músicos do metal moderno.\n\n");
                             printf("  Enviar pedido?\n  1-Sim\n  1-Não");
+                            printf("\x1b[29;1f+_____________________________________________________________________________________________________________________+");
+                            printf("\x1b[29;55f\x1b[37;40m");
                             scanf("%i", &opcao4);
+                            printf("\x1b[30;47m");
                              switch(opcao4){
                                 case 1:
                                 system("cls");
@@ -374,7 +396,10 @@ main(){
                             printf("  death metal e outros gêneros pesados. Bandas e músicos como Korn, Meshuggah e John Petrucci\n");
                             printf("  popularizaram o uso da superstrato de 7 cordas no cenário mundial.\n\n");
                             printf("  Enviar pedido?\n  1-Sim\n  1-Não");
+                            printf("\x1b[29;1f+_____________________________________________________________________________________________________________________+");
+                            printf("\x1b[29;55f\x1b[37;40m");
                             scanf("%i", &opcao4);
+                            printf("\x1b[30;47m");
                              switch(opcao4){
                                 case 1:
                                 system("cls");
@@ -416,7 +441,10 @@ main(){
                             printf("  personalidade sonora, sendo utilizada por músicos de praticamente todos os estilos, incluindo Bruce\n");
                             printf("  Springsteen, Keith Richards e John 5.\n\n");
                             printf("  Enviar pedido?\n  1-Sim\n  2-Não");
+                            printf("\x1b[29;1f+_____________________________________________________________________________________________________________________+");
+                            printf("\x1b[29;55f\x1b[37;40m");
                             scanf("%i", &opcao4);
+                            printf("\x1b[30;47m");
                              switch(opcao4){
                                 case 1:
                                 system("cls");
@@ -434,9 +462,116 @@ main(){
                                 _sleep(5000);
                                 }
                             break;
-
                     }
                     break;
+                    case 2:
+                    system("cls");
+                    printf("+_____________________________________________________________________________________________________________________+\n");
+                    printf("\t\t\t\x1b[37;40m      ___                                                          \n");
+                    printf("\t\t\t\x1b[37;40m    //   ) )                                                       \n");
+                    printf("\t\t\t\x1b[37;40m   ((         ___       __    __  ___ / __     ( )  ___      __    \n");
+                    printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
+                    printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
+                    printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
+                    printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");
+                    printf("\t\t\t\t\t   _________________\n");
+                    printf("\t\t\t\t\t  |Escolha o modelo.|\n");
+                    printf("\t\t\t\t\t  ´´´´´´´´´´´´´´´´´´´\n\n");
+                    printf("\t\t\t\t\t  1- Baixo JazzBass\n\n");
+                    printf("\t\t\t\t\t  2- Baixo Precision\n\n");
+                    printf("\x1b[29;1f+_____________________________________________________________________________________________________________________+");
+                    printf("\x1b[29;55f\x1b[37;40m");
+                    scanf("%i", &opcao3);
+                    printf("\x1b[30;47m");
+                    switch(opcao3){
+                            case 1:
+                            system("cls");
+                            printf("+_____________________________________________________________________________________________________________________+\n");
+                            printf("\t\t\t\x1b[37;40m      ___                                                          \n");
+                            printf("\t\t\t\x1b[37;40m    //   ) )                                                       \n");
+                            printf("\t\t\t\x1b[37;40m   ((         ___       __    __  ___ / __     ( )  ___      __    \n");
+                            printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
+                            printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
+                            printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
+                            printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");
+                            printf("\t\t\t\t     ____________________________\n");
+                            printf("\t\t\t\t    |    Contrabaixo JazzBass    |\n");
+                            printf("\t\t\t\t    ´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´\n\n");
+                            printf("\tO Fender Jazz Bass, lançado em 1960, é um dos baixos mais versáteis e populares do mundo. Ele se destaca\n");
+                            printf("  pelo som mais definido, com médios menos pronunciados e agudos mais claros em comparação ao\n");
+                            printf("  Precision. Possui dois captadores single-coil, que oferecem timbres variados e mais articulação. A chave ou\n");
+                            printf("  os dois controles de volume permitem misturar os captadores, criando sons desde suaves até mais\n");
+                            printf("  agressivos. Seu corpo é levemente mais estreito e anatômico, proporcionando conforto ao tocar. O braço é\n");
+                            printf("  mais fino na região da pestana, favorecendo a velocidade e a técnica. A escala é de 34 polegadas, padrão\n");
+                            printf("  Fender. A ponte fixa garante boa estabilidade de afinação e sustain. É muito usado no funk, jazz, soul, rock e\n");
+                            printf("  pop. Seu som é conhecido pelo \"growl\" característico, especialmente quando o captador da ponte é\n");
+                            printf("  destacado. Lendas como Jaco Pastorius, Geddy Lee e Marcus Miller ajudaram a eternizar o Jazz Bass.\n\n");
+                            printf("  Enviar pedido?\n  1-Sim\n  1-Não");
+                            printf("\x1b[29;1f+_____________________________________________________________________________________________________________________+");
+                            printf("\x1b[29;55f\x1b[37;40m");
+                            scanf("%i", &opcao4);
+                            printf("\x1b[30;47m");
+                             switch(opcao4){
+                                case 1:
+                                system("cls");
+                                printf("\t\t\t\t\tRegistrando seu pedido");
+                                int i=0;
+                                strcpy(instrumentoCriacao, "JazzBass");
+                                while (i<5){
+                                    printf(".");
+                                    _sleep(500);
+                                    i++;
+                                }
+                                system("cls");
+                                printf("\n\n\t\t\t\t\t\x1b[37;40mSeu pedido foi registrado com SUCESSO!");
+                                printf("\n\n\n\t\t\t\t\t%s\n\t\t\t\t\t%s\n\t\t\t\t\t%s\n\t\t\t\t\t%s",nome, sobrenome, telefone, instrumentoCriacao);
+                                _sleep(5000);
+                                }
+                                break;
+                            case 2:
+                            system("cls");
+                            printf("+_____________________________________________________________________________________________________________________+\n");
+                            printf("\t\t\t\x1b[37;40m      ___                                                          \n");
+                            printf("\t\t\t\x1b[37;40m    //   ) )                                                       \n");
+                            printf("\t\t\t\x1b[37;40m   ((         ___       __    __  ___ / __     ( )  ___      __    \n");
+                            printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
+                            printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
+                            printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
+                            printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");
+                            printf("\t\t\t\t     ___________________________\n");
+                            printf("\t\t\t\t    |   Contrabaixo Precision   |\n");
+                            printf("\t\t\t\t    ´´´´´´´´´´´´´´´´´´´´´´´´´´´´´\n\n");
+                            printf("\tO Fender Precision Bass, lançado em 1951, é o primeiro baixo elétrico de corpo sólido da história. Seu nome\n");
+                            printf("  vem dos trastes no braço, que oferecem mais precisão na execução. O som é encorpado, grave e com\n");
+                            printf("  médios bem definidos, perfeito para diversos estilos. Seu captador split-coil, introduzido em 1957, oferece\n");
+                            printf("  um timbre potente e com cancelamento de ruído. É conhecido pelo punch forte e presença no mix. Possui\n");
+                            printf("  corpo em alder ou ash, braço em maple e escala de 34 polegadas. Os controles são simples, com apenas\n");
+                            printf("  volume e tom. A ponte fixa garante estabilidade e sustain. É muito usado em rock, blues, punk, reggae e\n");
+                            printf("  soul. Seu visual é clássico e sua construção, extremamente robusta. Ícones como James Jamerson, Steve\n");
+                            printf("  Harris e Sting eternizaram o Precision.\n\n");
+                            printf("  Enviar pedido?\n  1-Sim\n  1-Não");
+                            printf("\x1b[29;1f+_____________________________________________________________________________________________________________________+");
+                            printf("\x1b[29;55f\x1b[37;40m");
+                            scanf("%i", &opcao4);
+                            printf("\x1b[30;47m");
+                             switch(opcao4){
+                                case 1:
+                                system("cls");
+                                printf("\t\t\t\t\tRegistrando seu pedido");
+                                int i=0;
+                                strcpy(instrumentoCriacao, "BaixoPrecision");
+                                while (i<5){
+                                    printf(".");
+                                    _sleep(500);
+                                    i++;
+                                }
+                                system("cls");
+                                printf("\n\n\t\t\t\t\t\x1b[37;40mSeu pedido foi registrado com SUCESSO!");
+                                printf("\n\n\n\t\t\t\t\t%s\n\t\t\t\t\t%s\n\t\t\t\t\t%s\n\t\t\t\t\t%s",nome, sobrenome, telefone, instrumentoCriacao);
+                                _sleep(5000);
+                                }
+                            break;
+                    }
                 }
                 break;
                 case 2:
