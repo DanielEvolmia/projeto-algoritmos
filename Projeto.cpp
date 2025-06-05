@@ -5,7 +5,7 @@
 
 main(){
 	setlocale(LC_ALL, "Portuguese");
-	int opcao1, opcao2, opcao3, opcao4;
+	int opcao1, opcao2, opcao3, opcao4, opcaosair;
 	char nome[30], sobrenome[30], telefone[14], instrumentoCriacao[25];
 	system("color 70");
 	printf("+_____________________________________________________________________________________________________________________+\n\n\n\n\n");
@@ -31,7 +31,7 @@ main(){
     _sleep(700);
     printf("\x1b[37;40m\r\t\t\t\t\t\t Carregando...\x1b[0m");
 	_sleep(700);
-	while(opcao1 != 5){
+	while(opcao1 != 4){
     system("cls");
     system("color 70");
     printf("+_____________________________________________________________________________________________________________________+\n");
@@ -46,10 +46,9 @@ main(){
 	printf("\t\t\t\t       |Escolha o serviço que deseja.|\n");
 	printf("\t\t\t\t       ´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´\n\n");
 	printf("\t\t\t\t       1- Criação de instrumento\n\n");
-	printf("\t\t\t\t       2- Manutenção de instrumento\n\n");
-    printf("\t\t\t\t       3- Cadastro\n\n");
-    printf("\t\t\t\t       4- Relatório\n\n");
-    printf("\t\t\t\t       5- Sair\n\n\t\t\t\t\t");
+    printf("\t\t\t\t       2- Cadastro\n\n");
+    printf("\t\t\t\t       3- Relatório\n\n");
+    printf("\t\t\t\t       4- Sair\n\n\t\t\t\t\t");
 	printf("\x1b[29;1f+_____________________________________________________________________________________________________________________+");
 	scanf("%i", &opcao1);
 	switch (opcao1){
@@ -149,7 +148,8 @@ main(){
                             printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
                             printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
                             printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
-                            printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");                            printf("\t\t\t\t\t ___________________\n");
+                            printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");
+                            printf("\t\t\t\t\t ___________________\n");
                             printf("\t\t\t\t\t|Guitarra Jazzmaster|\n");
                             printf("\t\t\t\t\t´´´´´´´´´´´´´´´´´´´´´\n\n");
                             printf("\tA guitarra Fender Jazzmaster foi lançada em 1958 como uma opção de ponta voltada originalmente para\n");
@@ -190,7 +190,8 @@ main(){
                             printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
                             printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
                             printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
-                            printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");                           printf("\t\t\t\t\t   _________________\n");
+                            printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");
+                            printf("\t\t\t\t\t   _________________\n");
                             printf("\t\t\t\t\t  |Guitarra Les Paul|\n");
                             printf("\t\t\t\t\t  ´´´´´´´´´´´´´´´´´´´\n\n");
                             printf("\tA guitarra Gibson Les Paul é um dos modelos mais icônicos e influentes da história da música, lançada em\n");
@@ -231,7 +232,8 @@ main(){
                             printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
                             printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
                             printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
-                            printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");                            printf("\t\t\t\t\t   ___________\n");
+                            printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");
+                            printf("\t\t\t\t\t   ___________\n");
                             printf("\t\t\t\t\t  |Guitarra SG|\n");
                             printf("\t\t\t\t\t  ´´´´´´´´´´´´´\n\n");
                             printf("\tA guitarra Gibson SG (Solid Guitar) foi lançada em 1961 como uma reformulação da Les Paul, mas acabou se\n");
@@ -271,7 +273,8 @@ main(){
                             printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
                             printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
                             printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
-                            printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");                           printf("\t\t\t\t\t _____________________\n");
+                            printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");
+                            printf("\t\t\t\t\t _____________________\n");
                             printf("\t\t\t\t\t|Guitarra Stratocaster|\n");
                             printf("\t\t\t\t\t´´´´´´´´´´´´´´´´´´´´´´´\n\n");
                             printf("\tA Fender Stratocaster, lançada em 1954, é uma das guitarras mais reconhecíveis e versáteis de todos os\n");
@@ -312,7 +315,8 @@ main(){
                             printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
                             printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
                             printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
-                            printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");                            printf("\t\t\t\t\t  ____________________\n");
+                            printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");
+                            printf("\t\t\t\t\t  ____________________\n");
                             printf("\t\t\t\t\t |Guitarra Superstrato|\n");
                             printf("\t\t\t\t\t ´´´´´´´´´´´´´´´´´´´´´´\n\n");
                             printf("\tAs guitarras do tipo superstrato (ou superstrat) surgiram nos anos 1980 como uma evolução das\n");
@@ -354,7 +358,8 @@ main(){
                             printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
                             printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
                             printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
-                            printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");                            printf("\t\t\t\t     _____________________________\n");
+                            printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");
+                            printf("\t\t\t\t     _____________________________\n");
                             printf("\t\t\t\t    |Guitarra Superstrato 7 Cordas|\n");
                             printf("\t\t\t\t    ´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´´\n\n");
                             printf("\tAs guitarras superstrato de 7 cordas são uma evolução das superstratos tradicionais, projetadas para\n");
@@ -396,7 +401,8 @@ main(){
                             printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
                             printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
                             printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
-                            printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");                            printf("\t\t\t\t\t   ___________________\n");
+                            printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");
+                            printf("\t\t\t\t\t   ___________________\n");
                             printf("\t\t\t\t\t  |Guitarra Telecaster|\n");
                             printf("\t\t\t\t\t  ´´´´´´´´´´´´´´´´´´´´´\n\n");
                             printf("\tA Fender Telecaster, lançada em 1950, é considerada a primeira guitarra elétrica de corpo sólido produzida\n");
@@ -433,10 +439,10 @@ main(){
                     break;
                 }
                 break;
-                case 3:
+                case 2:
                 system("cls");
                 printf("+_____________________________________________________________________________________________________________________+\n");
-                 printf("\t\t\t\x1b[37;40m      ___                                                          \n");
+                printf("\t\t\t\x1b[37;40m      ___                                                          \n");
                 printf("\t\t\t\x1b[37;40m    //   ) )                                                       \n");
                 printf("\t\t\t\x1b[37;40m   ((         ___       __    __  ___ / __     ( )  ___      __    \n");
                 printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
@@ -463,9 +469,27 @@ main(){
                 else{
                     printf("Existem informações faltantes");
                 _sleep(3000);
-                opcao1 =4;
                 }
                 break;
+                case 3:
+                system("cls");
+                printf("+_____________________________________________________________________________________________________________________+\n");
+                printf("\t\t\t\x1b[37;40m      ___                                                          \n");
+                printf("\t\t\t\x1b[37;40m    //   ) )                                                       \n");
+                printf("\t\t\t\x1b[37;40m   ((         ___       __    __  ___ / __     ( )  ___      __    \n");
+                printf("\t\t\t\x1b[37;40m    \\       //   ) ) //   ) )  / /   //   ) ) / / //___) ) //  ) ) \n");
+                printf("\t\t\t\x1b[37;40m      ) )  //   / / //   / /  / /   //   / / / / //       //       \n");
+                printf("\t\t\t\x1b[37;40m((___ / / ((___( ( //   / /  / /   //   / / / / ((____   //        \n");
+                printf("\t\t\t\x1b[37;40m                                                                   \n\x1b[30;47m");
+                printf("\t\t\t\t\t        ________\n");
+                printf("\t\t\t\t\t       |Registro|\n");
+                printf("\t\t\t\t\t       ´´´´´´´´´´\n\n");
+                printf("\t\t\t\t\tÚltimo pedido:\n\t\t\t\t\t%s %s\n\t\t\t\t\t%s\n\t\t\t\t\t%s", nome, sobrenome, instrumentoCriacao, telefone);
+                printf("\n\n\t\t\t\t\t Digite 1 para sair");
+                scanf("%i", &opcaosair);
+                break;
+                }
+
 		}
 	}
-}
+
